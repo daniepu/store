@@ -32,6 +32,7 @@ public class StoreEventService {
             case UPDATE:
                 validate(storeEvent);
                 save(storeEvent);
+                break;
             default:
                 log.info("invalid store event : {} ", storeEvent);
         }
